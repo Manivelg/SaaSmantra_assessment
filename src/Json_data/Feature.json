@@ -1,0 +1,50 @@
+[ 
+    {
+        "id" : 1,
+        "image": "../../custom/1.png",
+        "header": "Minimal Design",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 2,
+        "image": "../../custom/2.png",
+        "header": "Rocket Fast",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 3,
+        "image": "../../custom/3.png",
+        "header": "Framework",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 4,
+        "image": "../../custom/4.png",
+        "header": "Style Guide",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 5,
+        "image": "../../custom/5.png",
+        "header": "CSS + SASS",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 6,
+        "image": "../../custom/6.png",
+        "header": "Customizable",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 7,
+        "image": "../../custom/7.png",
+        "header": "Modular Design",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    },
+    {
+        "id" : 8,
+        "image": "../../custom/8.png",
+        "header": "HTML5 Valid",
+        "paragraph": "Sed ut perspiciatis unde omnis iste natus."
+    }
+]

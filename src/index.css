@@ -1,0 +1,462 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font: 18px/30px 'roboto_regular', san-serif;
+    --robo_r: "roboto_regular", san-serif;
+    --robo_b: "roboto_bold", san-serif;
+    --robo_m: "roboto_medium", san-serif;
+    --robo_l: "roboto_light", san-serif;
+    --color: #585656;
+    --white: #fff;
+    --blue: #1e1a3c;
+    --btn_blue: #595cdf;
+    --center: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'roboto_bold';
+  src: url("/public/fonts/roboto_bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'roboto_regular';
+  src: url("/public/fonts/roboto_regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'roboto_medium';
+  src: url("/public/fonts/roboto_medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'roboto_light';
+  src: url("/public/fonts/roboto_light.ttf") format("truetype");
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navbar */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+.nav_show,.nav_login {
+margin: 0;
+padding: 0;
+}
+.nav_show li,.nav_login li {
+display: inline-block;
+font: 0.9rem/2rem var(--robo_r);
+margin: 0 5px;
+cursor:pointer;
+outline: none;
+color: #888585;
+}
+.stay {
+padding: 3px 10px 5px;
+border-radius: 50px;
+transition: 1s;
+font: 0.8rem/2rem var(--robo_m);
+}
+.stay:hover {
+  background: #d0d0d0;
+  transition: 1s;
+}
+.signed {
+  background: #d0d0d0;
+  color: #343434;
+}
+/* Navbar */
+
+/* Banner */
+#header {
+  background: #ebebeb;
+  padding: 15px 0 50px;
+}
+.signup {
+margin: 0 auto;
+}
+.sign_header {
+text-align: var(--center);
+font: 3rem/3.5rem var(--robo_m);
+display: flex;
+flex-direction: column;
+min-height: 130px;
+justify-content: center;
+}
+.show_signup {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+width: 85%;
+margin: 0px auto;
+}
+.sign_one,.show_signup .sign_one:last-child:hover {
+width: 320px;
+padding: 20px;
+border-radius: 7px;
+background: var(--white);
+box-shadow: 0px 0px 5px #ccc4c4;
+color: #343434;
+transition: 1s;
+margin: 10px auto;
+}
+.show_signup .sign_one:last-child:hover .signup_btn {
+color: var(--white);
+transition: 1s;
+}
+.small_head {
+  font: 0.9rem/1.6rem var(--robo_r);
+  color: #888585;
+}
+.header {
+  font: 2.5rem/3rem var(--robo_b);
+  padding-bottom: 10px;
+}
+.small_paras {
+  font: 1rem/1.6rem var(--robo_r);
+}
+.small_para {
+  font: 1rem/1.6rem var(--robo_r);
+}
+.listed_item {
+  padding: 10px 0 20px 25px;
+}
+.listed_item li {
+list-style: disc;
+}
+.sub_btn {
+text-align: center;
+}
+.signup_btn {
+padding: 5px 10px 7px;
+width: 200px;
+border-radius: 50px;
+background: #e5e7eb;
+font: 1rem/2rem var(--robo_m);
+transition: 1s;
+outline: none;
+}
+.show_signup .sign_one:last-child,.sign_one:hover {
+  background: var(--blue);
+  box-shadow: 0px 0px 5px #ccc4c4;
+  transition: 1s;
+}
+.show_signup .sign_one:last-child,.sign_one:hover {
+color: var(--white);
+}
+.show_signup .sign_one:last-child .signup_btn,.sign_one:hover .signup_btn {
+  background: var(--btn_blue);
+  transition: 1s;
+}
+.sign_one:hover {
+  transition: 1s;
+  background: var(--blue);
+}
+/* Banner */
+.feature_show  {
+padding: 20px 0;
+}
+.feature_show li{
+display: inline-block;
+width: 25%;
+margin: 10px auto;
+}
+.feature_act {
+width: 95%;
+margin: 20px auto;
+}
+.feature_pic {
+width: 100%;
+}
+.show_img {
+padding: 10px;
+width: 90px;
+}
+.feature_head {
+  font: 1rem/2rem var(--robo_m);
+  margin: 0 0 5px;
+}
+.feature_para {
+  font: 1.1rem/1.6rem var(--robo_r);
+  color: var(--color);
+}
+.feature_set {
+  width: 70%;
+  margin: 10px auto;
+}
+
+/* Footer */
+.footer {
+  padding: 30px 0;
+}
+.footer_sec {
+display: flex;
+justify-content: space-evenly;
+}
+.footer_header {
+  font: 1rem/2rem var(--robo_m);
+  margin: 0 0 10px;
+}
+.footer_para {
+  font: 0.9rem/1.5rem var(--robo_r);
+  color: var(--color);
+  margin: 0 0 5px;
+}
+.footer_head {
+  font: 0.9rem/1.6rem var(--robo_r);
+  color: var(--color);
+  margin: 0 0 5px;
+}
+.footer_link {
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+.footer_link:hover,.footer_link:focus {
+color: #2933c1;
+transition: 1s ease-in-out;
+}
+.sp_block {
+  display: block;
+}
+.copyright {
+font: 14px/25px var(--robo_r);
+color: #939393;
+}
+.copy_foot {
+padding-top: 40px;
+}
+/* Footer */
+/* Form */
+#form {
+padding: 30px 0;
+background: #000 url('bg.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+}
+#form:before {
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(100deg,rgb(0,0,0,0.4) 100%,transparent 100%);
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+.form_head {
+padding: 30px 0;
+}
+.form_header {
+font: 2.7rem/4rem var(--robo_b);
+}
+.form_line {
+position: relative;
+color: var(--white);
+display: flex;
+align-content: center;
+justify-content: center;
+}
+.form_line:before {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  width: 100px;
+  border-bottom: 5px solid yellow;
+  text-align: center;
+  border-radius: 30px;
+}
+.form_action {
+position: relative;
+z-index: 1;
+padding: 30px 0;
+}
+.form_first {
+  display: flex;
+  justify-content: center;
+}
+.first_form {
+width: 320px;
+margin: 0px 10px;
+}
+.form_submit {
+text-align: center;
+padding-top: 20px;
+}
+.submit {
+  padding: 7px 70px 8px;
+  box-shadow: 1px 1px 25px #282222;
+  border-radius: 4px;
+  color: var(--white);
+  font: 1rem/2rem var(--robo_r);
+  background-image: linear-gradient(100deg,#00bcff 0%,#00effe 100%);
+  transition: 1s ease-in-out;
+}
+.submit:hover {
+  background-image: linear-gradient(100deg,#00effe 0%,#00bcff 100%);
+  transition: 1s ease-in-out;
+}
+.input_cloud {
+  width: 100%;
+  padding: 7px;
+  border: 1.8px solid #fff;
+  outline: none;
+  color: var(--color);
+  border-radius: 5px;
+  font: 1rem/2rem var(--robo_r);
+  background: rgba(255, 255, 255, 0.73);
+}
+.form_para {
+  font: 1rem/2rem var(--robo_r);
+  color: var(--white);
+}
+.error {
+  font: 1rem/2rem var(--robo_r);
+  height: 30px;
+}
+/* Form */
+
+
+@media only screen and (max-width: 1200px) {
+.show_signup {
+width: 100%;
+}
+.sign_one,.show_signup .sign_one:last-child:hover {
+  width: 300px;
+}
+}
+@media only screen and (max-width: 768px) {
+  .feature_set {
+    width: 100%;
+  }
+.footer_head {
+  width: 170px;
+}
+.sp_block {
+display: inline;
+}
+.show_signup {
+flex-direction: column;
+}
+.sign_one,.show_signup .sign_one:last-child:hover {
+  width: 340px;
+}
+.feature_para {
+  font: 1rem/1.6rem var(--robo_r);
+}
+.feature_show li {
+ width: 33%;
+}
+.sign_header {
+  font: 2.2rem/3.4rem var(--robo_m);
+}
+.nav_login li {
+  position: relative;
+  bottom: 5px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.nav_login li {
+  font: 1rem/2rem var(--robo_m);
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .feature_show li {
+    width: 50%;
+  }
+  .sign_header {
+    font: 2.2rem/2.7rem var(--robo_m);
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+.footer_sec {
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+}
+.footer_head {
+width: 100%;
+}
+.footer_two,.footer_one,.footer_three,.footer_four {
+  margin: 10px 0;
+}
+.sp_footer {
+  display:block;
+  }
+.form_first {
+  flex-direction: column;
+  align-items: center;
+}
+.first_form,.submit {
+  width: 90%;
+}
+#form {
+background-position: center;
+}
+}
+
+@media only screen and (max-width: 440px) {
+  .feature_show li {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .feature_set {
+  padding: 10px 5px;
+  }
+  .feature_show li {
+    margin: 0;
+  }
+  .feature_head {
+    font: 0.9rem/1.6rem var(--robo_m);
+  }
+  .feature_para {
+    font: 0.9rem/1.6rem var(--robo_r);
+  }
+  .feature_act {
+    margin: 15px auto;
+  }
+  .sign_header {
+    font: 2.2rem/2.7rem var(--robo_m);
+    min-height: 150px;
+  }
+  .form_head {
+    padding: 20px 0 15px;
+  }
+  .form_para {
+    font: 0.9rem/2.4rem var(--robo_r);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+.form_header {
+font: 1.8rem/2.5rem var(--robo_m);
+}
+}

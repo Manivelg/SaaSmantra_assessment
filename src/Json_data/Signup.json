@@ -1,0 +1,34 @@
+[
+    {
+        "id" : 1,
+        "small_header" : "Free Forever",
+        "header" : "Free",
+        "header_para" : "Ut enim ad minima veniam, quis nostrum exercitationem.",
+        "list_one" : "At vero eos et accusamus",
+        "list_two" : "Odio dignissimos ducimus",
+        "list_three" : "Blanditiis praesentium",
+        "submit" : "Sign Up For Free"
+    },
+
+    {
+        "id" : 2,
+        "small_header": "For Teams",
+        "header": "$20",
+        "header_para": "Ut enim ad minima veniam, quis nostrum exercitationem.",
+        "list_one" : "At vero eos et accusamus",
+        "list_two" : "Odio dignissimos ducimus",
+        "list_three" : "Blanditiis praesentium",
+        "submit" : "Start 14-Day Trial"
+    },
+    {
+        "id" : 3,
+        "small_header": "For Enterprises",
+        "header": "$140",
+        "header_para": "Ut enim ad minima veniam, quis nostrum exercitationem.",
+        "list_one" : "At vero eos et accusamus",
+        "list_two" : "Odio dignissimos ducimus",
+        "list_three" : "Blanditiis praesentium",
+        "submit" : "Start 14-Day Trial"
+    }
+
+]
