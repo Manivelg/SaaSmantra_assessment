@@ -2,6 +2,10 @@ import React from 'react';
 import { useFormik } from 'formik'; 
 import * as yup from 'yup';   
 import 'yup-phone';
+import axios from 'axios';
+import { data } from 'autoprefixer';
+
+axios.defaults.baseURL='../Json_data.json';
 
 function Form() {
  
@@ -35,8 +39,15 @@ function Form() {
        .phone(null, true, 'Invalid mobile Number')
        .required('* Enter your mobile number.')
     }),
-    onSubmit: (userInputData) => {
-      console.log(userInputData);
+    onSubmit: async (userInputData) => {
+      //console.log(userInputData);
+       await axios.post('url',
+        {
+          Name:data.Name,
+          Email: data.Email,
+          Designation: data.Designation,
+          Contact: data.Contact,
+        }).then(res=> console.log(res.data));
     }
   })
 
